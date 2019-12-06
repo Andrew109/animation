@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    background-image: url(asset/laptop-2838921.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+}  
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo {
+    border-radius: 0px 0px 25px 25px;
+}
+
+.profil-image {
+    border-radius: 100%;
+    justify-content:center;
+    margin-top: 150px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(31, 31, 32);
+    background-color: rgb(243, 241, 241);
+    padding-top: 50px;
+    padding-bottom: 85px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    height: 100%;
+    background-color: white;
+    padding: 0;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.image {
+    border-radius: 24px 24px 0px 0px;
+    border-start-start-radius: 24px;
+}
+
+h1 {
+    color: rgb(105, 194, 16);
+    margin-bottom: 15px;
+}
+
+.card-content {
+    margin: 25px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+
+.animation {
+    display: flex;
+}
+
+.ruang {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100%;*/
+}
+
+.anim {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    animation: animspin 2s infinite ease-in-out;
+}
+
+.kotaksatu {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #f0c048;
+    /*animation: roundone 5s infinite linear;*/
+}
+
+.kotakdua {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #f0d8a8;
+    /*animation: roundtwo 5s infinite linear;*/
+    /* justify-content: flex-end;*/
+}
+
+.kotaktiga {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #30a860;
+    /*animation: roundthree 5s infinite linear;*/
+    /*justify-content: flex-end;*/
+}
+
+.kotakempat {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #786048;
+    /*animation: roundfour 5s infinite linear;*/
+    /*justify-content: flex-end;*/
+}
+
+.introduce {
+    width: auto;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 50px;
+}
+
+.button {
+    color: rgb(44, 44, 44);
+    background-color: rgb(30, 194, 30);
+    padding: 2px 8px;
+    width: 100px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 5%; /*why?*/
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+/*@keyframes roundone {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes roundtwo {
+    0% {
+        bottom: 100%;
+        right: 0;
+    }
+    25% {
+        bottom: 0;
+        right: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}*/
+
+@keyframes animspin {
+    0% {
+        /* Putar Obyek Sebesar 0 Derajat Pada Awal Proses*/
+        transform: rotate(0deg);
+    }
+    100% {
+        /* Putar Obyek Sebesar 360 Derajat Pada Akhir Proses*/
+        transform: rotate(360deg);
+    }
+}
